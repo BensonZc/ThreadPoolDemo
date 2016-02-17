@@ -13,7 +13,6 @@ import java.util.concurrent.*;
  */
 public final class MultiThreadPool {
     private static final ExecutorService executorService;
-    private static final Logger logger = LoggerFactory.getLogger(MultiThreadPool.class);
 
     static {
         /**
@@ -42,7 +41,7 @@ public final class MultiThreadPool {
                 try {
                     timeoutJob.run();
                 } catch (JobException e) {
-                    logger.error(e.getMessage(), e);
+                    System.out.println(e.getMessage());
                 }
             }
         });

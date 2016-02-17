@@ -8,7 +8,6 @@ import org.slf4j.LoggerFactory;
  * Created by zhangchen on 2016/2/16.
  */
 public abstract class AbstractTimeoutJob implements TimeoutJob {
-    protected Logger logger = LoggerFactory.getLogger(this.getClass());
     private long startTime = -1;
 
     @Override
@@ -26,7 +25,7 @@ public abstract class AbstractTimeoutJob implements TimeoutJob {
         try {
             execute();
         } catch (JobException e) {
-            logger.error(e.getMessage(), e);
+            System.out.println(e.getMessage());
         }
     }
 
