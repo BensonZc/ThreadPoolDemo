@@ -3,8 +3,6 @@ package com.benson.pool;
 import com.benson.exception.JobException;
 import com.benson.thread.JobResult;
 import com.benson.thread.TimeoutJob;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.*;
 
