@@ -1,8 +1,6 @@
 package com.benson.thread;
 
 import com.benson.exception.JobException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Created by zhangchen on 2016/2/16.
